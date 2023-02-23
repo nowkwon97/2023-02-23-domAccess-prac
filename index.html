@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="menu">
+    <li>items-1</li>
+    <li>items-2</li>
+    <li>items-3</li>
+    <li>items-4</li>
+    <li>items-5</li>
+  </ul>
+  <script>
+    console.dir(window);
+    // 모두 적용을 시키려면 반복문이 필요하다.
+    let menu = document.getElementById('menu');
+    console.dir(menu);
+    console.dir(menu.children);
+    console.log(menu.children.length);
+    for ( let i = 0; i < menu.children.length; i++) {
+      menu.children[i].style.backgroundColor = "blue";
+    }
+    
+  </script>
+</body>
+</html>
